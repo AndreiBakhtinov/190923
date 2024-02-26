@@ -1,3 +1,2 @@
-SELECT *
-FROM Products
-WHERE price > 100;
+SELECT * FROM Products
+WHERE Price >= 100;
