@@ -1,3 +1,3 @@
 SELECT *
 FROM Products
-Where Price > 100
+Where Price >= 100
