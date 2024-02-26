@@ -1,4 +1,0 @@
-- Andrei Bakhtinov
-- Viktor Bulatov
-- Alyona Andrieichenko
-- Natalia Oleksenko
