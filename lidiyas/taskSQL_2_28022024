@@ -1,0 +1,10 @@
+--Вывести ТОП-3 клиентов по ко-ву заказов
+--Проекция
+--имя_клиента
+--ко-во_заказов
+
+SELECT Customers.CustomerName, COUNT(*) as orders_quantity FROM Orders
+JOIN Customers ON Customers.CustomerID = Orders.CustomerID
+GROUP BY Customers.CustomerName
+ORDER BY orders_quantity Desc
+LIMIT 3;
