@@ -27,7 +27,7 @@ CREATE TABLE `filial` (
   `created_at` datetime,
   `address` varchar(255),
   `workschedule` datetime,
-  `device_capacity` int,
+  `devices_capacity` int,
   `available_area` int,
   `is_active` bool
 );
@@ -49,25 +49,25 @@ CREATE TABLE `orders` (
   `user_id` int,
   `filial_id` int,
   `device_id` int,
+  `amount` float,
   `payment_received` bool,
   `order_completed` datetime
 );
 
 ALTER TABLE `filial` ADD FOREIGN KEY (`id`) REFERENCES `employers` (`id`);
 
-CREATE TABLE `devices_filial` (
-  `devices_id` int,
-  `filial_id` int,
-  PRIMARY KEY (`devices_id`, `filial_id`)
-);
+ALTER TABLE `filial` ADD FOREIGN KEY (`id`) REFERENCES `devices` (`id`);
 
-ALTER TABLE `devices_filial` ADD FOREIGN KEY (`devices_id`) REFERENCES `devices` (`id`);
-
-ALTER TABLE `devices_filial` ADD FOREIGN KEY (`filial_id`) REFERENCES `filial` (`id`);
-
+ALTER TABLE `filial` ADD FOREIGN KEY (`id`) REFERENCES `devices` (`filial_id`);
 
 ALTER TABLE `clients` ADD FOREIGN KEY (`id`) REFERENCES `orders` (`id`);
+
+ALTER TABLE `orders` ADD FOREIGN KEY (`user_id`) REFERENCES `clients` (`id`);
+
+ALTER TABLE `orders` ADD FOREIGN KEY (`device_id`) REFERENCES `devices` (`id`);
 
 ALTER TABLE `employers` ADD FOREIGN KEY (`filial_id`) REFERENCES `filial` (`id`);
 
 ALTER TABLE `orders` ADD FOREIGN KEY (`id`) REFERENCES `devices` (`id`);
+
+ALTER TABLE `orders` ADD FOREIGN KEY (`filial_id`) REFERENCES `filial` (`id`);
