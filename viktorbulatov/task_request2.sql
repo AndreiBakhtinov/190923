@@ -4,4 +4,4 @@ SELECT
 FROM Orders
 join Customers on Customers.CustomerID = Orders.CustomerID
 group by Orders.CustomerID
-order by OrdersQuantity desc LIMIT 3;
+order by Orders.Quantity desc LIMIT 3;
