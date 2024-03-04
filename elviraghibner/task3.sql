@@ -1,4 +1,6 @@
---  Вывести все товары с ценой от 100 EUR
-SELECT * 
-FROM Products 
-WHERE price >= 100;
+
+-- Вывести общее ко-во клиентов не из Germany
+SELECT COUNT(*) AS total_customers_not_in_germany
+FROM Customers
+WHERE Country <> 'Germany';
+
