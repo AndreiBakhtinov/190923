@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/setStyle.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <header>
+            <h1>Tour Boocking Form</h1>
+        </header>
+        <div>
+            <div>
+                <label for="">Name</label>
+                <input type="text" placeholder="First name">
+                <label for="" class="emptyLabel"></label>
+                <input type="text" placeholder="Last name">
+            </div>
+            <div>
+                <label for="">Email</label>
+                <input type="email" placeholder="name@gmail.com">
+            </div>
+            <div>
+                <label for="">Phone</label>
+                <input type="number" placeholder="+48 xxx xxx xxx">
+            </div>
+            <div>
+                <label for="">When are you planed to visit?</label>
+                <input type="date">
+            </div>
+            <div>
+                <label for="">How many people are in your groop</label>
+                <input type="text" placeholder="Last name">
+            </div>
+            <div>
+                <label for="">What country?</label>
+                <select name="country" id="">
+                    <option value="UAE">UAE</option>
+                    <option value="London">London</option>
+                    <option value="Poland">Poland</option>
+                    <option value="Ukraine">Ukraine</option>
+                </select>
+            </div>
+            <div class="buttons">
+                <p>What is the best way to contact you?</p>
+                <div>
+                    <input type="checkbox">
+                    <label for="chk1">Phone</label>
+                </div>
+                <div>
+                    <input type="checkbox">
+                    <label for="chk2">Email</label>
+                </div>
+                <div>
+                    <input type="checkbox">
+                    <label for="chk3">Other</label>
+                </div>
+                <p>If phone, when?</p>
+                <div>
+                    <input type="radio" name="radio">
+                    <label for="1">8 - 11</label>
+                </div>
+                <div>
+                    <input type="radio" name="radio">
+                    <label for="2">12 - 17</label>
+                </div>
+                <div>
+                    <input type="radio" name="radio">
+                    <label for="3">18 - 23</label>
+                </div>
+                <div>
+                    <label for="else">Anything else we should know?</label>
+                    <textarea id="else"></textarea>
+                </div>
+                <div>
+                    <button type="submit" class="but">Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

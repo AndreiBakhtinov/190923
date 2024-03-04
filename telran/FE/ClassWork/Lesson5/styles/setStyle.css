@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    padding: 20px;
+}
+.main{
+    border: 5px solid #87CEFA;
+    box-shadow: 0 0 15px 0 #87CEFA;
+    border-radius: 10px;
+    padding: 20px;
+}
+header{
+    height: 250px;
+    background-color: #87CEFA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+lable, input, textarea{
+    margin: 10px;
+    padding: 10px;
+    display: block;
+    width: 100%;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+.emptyLabel{
+    display: none;
+}
+.buttons input, .buttons label{
+    display: inline-block;
+    width: auto;
+}
+.but{
+    display: flex;
+    justify-content: center;
+}

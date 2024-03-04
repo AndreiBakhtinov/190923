@@ -1,0 +1,16 @@
+body{
+    background-color:cadetblue;
+    font-size: 14px;
+}
+pre{
+    font-weight: lighter;
+    font-style: italic;
+    font-size: 16px;
+    text-align: center;
+}
+.alo{
+    color: green;
+}
+#f1{
+    color: red;
+}

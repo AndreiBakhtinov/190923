@@ -1,0 +1,8 @@
+
+#!/bin/bash
+
+echo "your username is: $USER"
+echo "your working directory is: $PWD"
+echo "Number of users: "
+ps aux
+echo "done"
