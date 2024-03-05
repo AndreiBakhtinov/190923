@@ -5,3 +5,4 @@
 - Viktor Bulatov
 - Alyona Andrieichenko
 - Elvira Ghibner
+- Natalia Oleksenko
